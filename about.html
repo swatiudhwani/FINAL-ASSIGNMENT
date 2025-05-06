@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Papwrap</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0d0d0d;
+            color: #ccc;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            transition: all 0.3s ease-in-out;
+        }
+        .glass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="your-logo-path.jpg" alt="Papwrap Logo" height="40" class="me-2">
+                <strong>Papwrap</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="text-center py-5 bg-black text-white" data-aos="fade-up">
+        <div class="container">
+            <h1 class="display-4 fw-bold">About <span class="text-primary">Papwrap</span></h1>
+            <p class="lead text-muted mt-3">Delivering creativity to your doorstep.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <img src="your-about-image-path.jpg" alt="About Us" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="glass-card">
+                        <h2 class="fw-bold mb-4">Our Journey</h2>
+                        <p class="text-muted">Papwrap started with a mission to bring premium printing solutions to every doorstep. With cutting-edge technology and a passion for perfection, we create products that leave a lasting impression.</p>
+                        <p class="text-muted">Whether it's a custom 3D model, a powerful business banner, or personal gifts — Papwrap prints your dreams into reality with unmatched quality and speed.</p>
+                        <a href="services.html" class="btn btn-primary mt-3">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Papwrap Section -->
+    <section class="py-5 bg-dark text-center text-white">
+        <div class="container" data-aos="fade-up">
+            <h2 class="fw-bold mb-5">Why Trust Papwrap?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="glass-card">
+                        <h5>Innovative Technology</h5>
+                        <p>We use latest tech to ensure precision and quality.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card">
+                        <h5>Passionate Team</h5>
+                        <p>Our expert team is driven by creativity and customer happiness.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card">
+                        <h5>Customer Focus</h5>
+                        <p>Your satisfaction is our ultimate reward. Always!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-black text-center text-muted">
+        <div class="container">
+            <p>Made with ❤️ by Papwrap Solutions Pvt Ltd | &copy; 2025 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>
