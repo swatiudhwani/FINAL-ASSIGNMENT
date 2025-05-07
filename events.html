@@ -1,141 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events - Papwrap</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events - Papwrap</title>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- AOS Animation CSS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #0d0d0d;
-            color: #ccc;
-        }
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d0d0d;
+      color: #ccc;
+    }
 
-        .glass-card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 30px;
-            transition: all 0.3s ease-in-out;
-        }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      transition: all 0.3s ease-in-out;
+    }
 
-        .glass-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-        }
-    </style>
+    .glass-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="images/logo.webp" alt="Papwrap Logo" height="40" class="me-2">
-                <strong>Papwrap</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo.webp" alt="Papwrap Logo" height="40" class="me-2">
+        <strong>Papwrap</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-5 bg-black text-white" data-aos="fade-up">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Papwrap <span class="text-primary">Events</span></h1>
+      <p class="lead text-muted mt-3">Showcasing creativity at every corner.</p>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Event Cards -->
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card">
+            <h4 class="fw-bold mb-2">Creative Print Expo 2025</h4>
+            <p class="text-muted">Meet us at Mumbai Convention Center — featuring latest print innovations!</p>
+            <p class="text-primary fw-bold">Date: 15th August 2025</p>
+            <a href="#" class="btn btn-primary btn-sm mt-3">Know More</a>
+          </div>
         </div>
-    </nav>
 
-    <!-- Hero -->
-    <section class="text-center py-5 bg-black text-white" data-aos="fade-up">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Papwrap <span class="text-primary">Events</span></h1>
-            <p class="lead text-muted mt-3">Showcasing creativity at every corner.</p>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card">
+            <h4 class="fw-bold mb-2">Papwrap Creative Workshop</h4>
+            <p class="text-muted">Free workshops for designing, branding, and personalized printing skills!</p>
+            <p class="text-primary fw-bold">Date: 5th September 2025</p>
+            <a href="#" class="btn btn-primary btn-sm mt-3">Register Now</a>
+          </div>
         </div>
-    </section>
 
-    <!-- Events -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-4">
-
-                <!-- Event 1 -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="glass-card">
-                        <h4 class="fw-bold mb-2">Creative Print Expo 2025</h4>
-                        <p class="text-muted">Meet us at Mumbai Convention Center — featuring latest print innovations!</p>
-                        <p class="text-primary fw-bold">Date: 15th August 2025</p>
-                        <a href="#" class="btn btn-primary btn-sm mt-3">Know More</a>
-                    </div>
-                </div>
-
-                <!-- Event 2 -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="glass-card">
-                        <h4 class="fw-bold mb-2">Papwrap Creative Workshop</h4>
-                        <p class="text-muted">Free workshops for designing, branding, and personalized printing skills!</p>
-                        <p class="text-primary fw-bold">Date: 5th September 2025</p>
-                        <a href="#" class="btn btn-primary btn-sm mt-3">Register Now</a>
-                    </div>
-                </div>
-
-                <!-- Event 3 -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="glass-card">
-                        <h4 class="fw-bold mb-2">Business Branding Summit</h4>
-                        <p class="text-muted">Grow your brand visibility with the best marketing prints!</p>
-                        <p class="text-primary fw-bold">Date: 10th October 2025</p>
-                        <a href="#" class="btn btn-primary btn-sm mt-3">Join Us</a>
-                    </div>
-                </div>
-
-                <!-- Event 4 -->
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="glass-card">
-                        <h4 class="fw-bold mb-2">Customer Appreciation Day</h4>
-                        <p class="text-muted">Special discounts, gifts, and workshops for our loyal customers!</p>
-                        <p class="text-primary fw-bold">Date: 25th December 2025</p>
-                        <a href="#" class="btn btn-primary btn-sm mt-3">Celebrate With Us</a>
-                    </div>
-                </div>
-
-            </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="glass-card">
+            <h4 class="fw-bold mb-2">Business Branding Summit</h4>
+            <p class="text-muted">Grow your brand visibility with the best marketing prints!</p>
+            <p class="text-primary fw-bold">Date: 10th October 2025</p>
+            <a href="#" class="btn btn-primary btn-sm mt-3">Join Us</a>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="py-4 bg-black text-center text-muted">
-        <div class="container">
-            <p>Made with ❤️ by Papwrap Solutions Pvt Ltd | &copy; 2025 All Rights Reserved</p>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="glass-card">
+            <h4 class="fw-bold mb-2">Customer Appreciation Day</h4>
+            <p class="text-muted">Special discounts, gifts, and workshops for our loyal customers!</p>
+            <p class="text-primary fw-bold">Date: 25th December 2025</p>
+            <a href="#" class="btn btn-primary btn-sm mt-3">Celebrate With Us</a>
+          </div>
         </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
-    </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-black text-center text-muted">
+    <div class="container">
+      <p>Made with ❤️ by Papwrap Solutions Pvt Ltd | &copy; 2025 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
 </body>
-
 </html>
