@@ -38,51 +38,16 @@
     section {
       overflow: hidden;
     }
-
-    .sidebar {
-      position: fixed;
-      top: 80px;
-      left: 0;
-      height: 100%;
-      width: 200px;
-      background-color: #1c1c1c;
-      padding-top: 20px;
-    }
-
-    .sidebar a {
-      display: block;
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-    }
-
-    .sidebar a:hover {
-      background-color: #333;
-    }
-
-    .content {
-      margin-left: 220px;
-    }
-
-    @media (max-width: 768px) {
-      .sidebar {
-        display: none;
-      }
-
-      .content {
-        margin-left: 0;
-      }
-    }
   </style>
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="images/logo.webp" alt="Papwrap Logo" height="40" class="me-2" style="max-width: 40px; height: auto;">
+        <img src="images/logo.webp" alt="Papwrap Logo" height="40" class="me-2" style="max-width: 40px;">
         <strong>Papwrap</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -100,46 +65,33 @@
     </div>
   </nav>
 
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="events.html">Events</a>
-    <a href="contact.html">Contact</a>
-  </div>
+  <!-- Hero Section -->
+  <section class="text-center py-5 bg-black text-white" data-aos="fade-up">
+    <div class="container">
+      <h1 class="display-4 fw-bold">About <span class="text-primary">Papwrap</span></h1>
+      <p class="lead mt-3">Your one-stop destination for creative printing and gifting solutions.</p>
+    </div>
+  </section>
 
-  <!-- Page Content -->
-  <div class="content">
-
-    <!-- Hero Section -->
-    <section class="text-center py-5 bg-black text-white" data-aos="fade-up">
-      <div class="container">
-        <h1 class="display-4 fw-bold">About <span class="text-primary">Papwrap</span></h1>
-        <p class="lead mt-3">Your one-stop destination for creative printing and gifting solutions.</p>
-      </div>
-    </section>
-
-    <!-- About Content -->
-    <section class="py-5">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <p class="fs-5">
-              At Papwrap, we blend creativity with precision to offer high-quality customized printing solutions. 
-              Whether you're a business looking for bulk print materials or an individual wanting to gift something unique, 
-              we've got you covered. Our services range from <strong>3D printing</strong> to <strong>custom mugs, t-shirts, posters, banners, 
-              business cards, stickers</strong>, and more — all crafted with care and delivered to your doorstep.
-            </p>
-            <p class="fs-5 mt-4">
-              Founded by passionate creators, Papwrap strives to make design and innovation accessible and affordable. 
-              We believe in turning ideas into tangible reality, one print at a time.
-            </p>
-          </div>
+  <!-- About Content -->
+  <section class="py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <p class="fs-5">
+            At Papwrap, we blend creativity with precision to offer high-quality customized printing solutions. 
+            Whether you're a business looking for bulk print materials or an individual wanting to gift something unique, 
+            we've got you covered. Our services range from <strong>3D printing</strong> to <strong>custom mugs, t-shirts, posters, banners, 
+            business cards, stickers</strong>, and more — all crafted with care and delivered to your doorstep.
+          </p>
+          <p class="fs-5 mt-4">
+            Founded by passionate creators, Papwrap strives to make design and innovation accessible and affordable. 
+            We believe in turning ideas into tangible reality, one print at a time.
+          </p>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="py-4 bg-black text-center text-muted">
